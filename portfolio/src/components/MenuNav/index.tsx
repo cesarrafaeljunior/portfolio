@@ -14,16 +14,36 @@ export const MenuNav = () => {
             className="btn__closeArrow"
           />
         </figure>
-        <a href="#">Informações</a>
-        <span className="lineNav"></span>
-        <a>Habilidades</a>
-        <span className="lineNav"></span>
-        <a>Experiência</a>
-        <span className="lineNav"></span>
-        <a>Projetos</a>
-        <span className="lineNav"></span>
-        <a>Contato</a>
-        <span className="lineNav"></span>
+        <div className="box__links">
+          <a href="#">Informações</a>
+          <span className="lineNav">
+            <span className="lineNavAnimation"></span>
+          </span>
+        </div>
+        <div className="box__links">
+          <a>Habilidades</a>
+          <span className="lineNav">
+            <span className="lineNavAnimation"></span>
+          </span>
+        </div>
+        <div className="box__links">
+          <a>Experiência</a>
+          <span className="lineNav">
+            <span className="lineNavAnimation"></span>
+          </span>
+        </div>
+        <div className="box__links">
+          <a>Projetos</a>
+          <span className="lineNav">
+            <span className="lineNavAnimation"></span>
+          </span>
+        </div>
+        <div className="box__links">
+          <a>Contato</a>
+          <span className="lineNav">
+            <span className="lineNavAnimation"></span>
+          </span>
+        </div>
       </nav>
     </SectionMenuNavStyled>
   );
