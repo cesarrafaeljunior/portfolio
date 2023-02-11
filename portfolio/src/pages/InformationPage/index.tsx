@@ -1,5 +1,10 @@
+import { Main } from "../../components/Main";
 import { MenuNav } from "../../components/MenuNav";
 
 export const InformationPage = () => {
-  return <MenuNav>Menu nav</MenuNav>;
+  return (
+    <Main>
+      <MenuNav />
+    </Main>
+  );
 };
