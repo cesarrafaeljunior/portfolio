@@ -3,9 +3,8 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
 body{
-        width: 100%;
-        height: 100%;
-        background-color: var(--backgroundBody);
+        width: 100vw;
+        height: 100vh;
     }
     *{
         margin: 0;
@@ -18,6 +17,8 @@ body{
     }
     a{
         text-decoration: none;
+        color: #fff;
+        cursor: pointer;
     }
     button{
         border: none;
