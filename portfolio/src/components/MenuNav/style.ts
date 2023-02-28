@@ -7,6 +7,11 @@ const color = {
 };
 
 export const SectionMenuNavStyled = styled.section`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
   width: 100%;
   height: 100%;
 
@@ -50,4 +55,9 @@ export const SectionMenuNavStyled = styled.section`
   }
 
   background-color: ${color.colorBackGround};
+
+  @media (min-width: 720px) {
+    width: 32%;
+    border-right: 1px white solid;
+  }
 `;

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const ProjectsPageStyled = styled.section`
+  position: relative;
+
   width: 100%;
   min-height: 100vh;
 
@@ -45,6 +47,7 @@ export const ProjectsPageStyled = styled.section`
       gap: 1em;
 
       width: 100%;
+      max-width: 1200px;
       height: 100vh;
 
       overflow-x: auto;

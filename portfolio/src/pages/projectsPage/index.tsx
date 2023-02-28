@@ -3,10 +3,12 @@ import { ButtonStyled } from "../../components/common/Button/style";
 import { Footer } from "../../components/common/Footer";
 import { ProjectsPageStyled } from "./style";
 import { projects } from "../../database";
+import { MenuNav } from "../../components/MenuNav";
 
 export const ProjectsPage = () => {
   return (
     <ProjectsPageStyled>
+      <MenuNav />
       <section className="section__filter">
         <h2>Filtrar por:</h2>
         <div className="box__options">

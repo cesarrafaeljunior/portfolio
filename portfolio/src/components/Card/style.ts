@@ -6,22 +6,28 @@ export const CardStyled = styled.li`
   align-items: center;
   justify-content: space-between;
 
-  width: 252px;
-  height: 320px;
+  width: 230px;
+  height: 300px;
 
-  padding: 0.9em;
+  padding: 1em;
 
   border: solid 2px #877b67;
   background-color: #44575f;
 
   &:hover {
     border: solid 2px #f7d59a;
+    background-color: #6c828b;
+  }
+  &:hover img {
+    filter: brightness(2);
   }
 
-  .bg {
+  img {
     width: 100%;
-    height: 20%;
-    background-color: #6c828b;
+    height: 100%;
+    padding: 1em;
+    object-fit: cover;
+    cursor: pointer;
   }
 
   .section__description {

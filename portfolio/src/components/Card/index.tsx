@@ -4,10 +4,10 @@ import { ICardInfos } from "../../interfaces/databases";
 export const Card = ({ name, image, type, description }: ICardInfos) => {
   return (
     <CardStyled>
-      <div className="bg"></div>
-      <section className="section__description">
+      <img src={image} alt="" />
+      {/* <section className="section__description">
         <p>{description}</p>
-      </section>
+      </section> */}
 
       <div>
         <p>{name}</p>
