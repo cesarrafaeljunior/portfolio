@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
-import { Main } from "../common/Main";
+import { MainLayoutStyled } from "./style";
 export const MainLayout = () => {
   return (
-    <Main>
+    <MainLayoutStyled>
       <Outlet />
-    </Main>
+    </MainLayoutStyled>
   );
 };

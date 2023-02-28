@@ -1,10 +1,18 @@
 import { CardStyled } from "./style";
+import { ICardInfos } from "../../interfaces/databases";
 
-export const Card = () => {
+export const Card = ({ name, image, type, description }: ICardInfos) => {
   return (
     <CardStyled>
-      <img src="" alt="Icon do projeto" />
-      <p>Titulo do projeto</p>
+      <div className="bg"></div>
+      <section className="section__description">
+        <p>{description}</p>
+      </section>
+
+      <div>
+        <p>{name}</p>
+        <p>{type}</p>
+      </div>
     </CardStyled>
   );
 };

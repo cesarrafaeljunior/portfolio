@@ -1,5 +1,6 @@
 import { IPhrase } from "../../../interfaces/props";
+import { FooterStyled } from "./style";
 
 export const Footer = ({ phrase }: IPhrase) => {
-  return <footer>{phrase}</footer>;
+  return <FooterStyled>{phrase}</FooterStyled>;
 };

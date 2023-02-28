@@ -11,6 +11,13 @@ body{
         padding: 0;
         box-sizing: border-box;
         font-family: 'Inter', sans-serif;
+        &::-webkit-scrollbar {
+        width: 5px;
+        height: 3px; /* A altura só é vista quando a rolagem é horizontal */
+      }
+        &::-webkit-scrollbar-thumb {
+        background-color: #f7d59a;
+      }
     }
     ul,ol{
         list-style: none;
