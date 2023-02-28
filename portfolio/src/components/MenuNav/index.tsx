@@ -1,6 +1,7 @@
 import { SectionMenuNavStyled } from "./style";
 import LogoAssasins from "../../assets/img/icons/assasin_icon.png";
 import CloseArrow from "../../assets/img/icons/closeArror-2.png";
+import { BoxLinks } from "./BoxLinks/indx";
 
 export const MenuNav = () => {
   return (
@@ -14,36 +15,11 @@ export const MenuNav = () => {
             className="btn__closeArrow"
           />
         </figure>
-        <div className="box__links">
-          <a href="#">Informações</a>
-          <span className="lineNav">
-            <span className="lineNavAnimation"></span>
-          </span>
-        </div>
-        <div className="box__links">
-          <a>Habilidades</a>
-          <span className="lineNav">
-            <span className="lineNavAnimation"></span>
-          </span>
-        </div>
-        <div className="box__links">
-          <a>Experiência</a>
-          <span className="lineNav">
-            <span className="lineNavAnimation"></span>
-          </span>
-        </div>
-        <div className="box__links">
-          <a>Projetos</a>
-          <span className="lineNav">
-            <span className="lineNavAnimation"></span>
-          </span>
-        </div>
-        <div className="box__links">
-          <a>Contato</a>
-          <span className="lineNav">
-            <span className="lineNavAnimation"></span>
-          </span>
-        </div>
+        <BoxLinks navOption="Informações" />
+        <BoxLinks navOption="Habilidades" />
+        <BoxLinks navOption="Experiência" />
+        <BoxLinks navOption="Projetos" />
+        <BoxLinks navOption="Contato" />
       </nav>
     </SectionMenuNavStyled>
   );
