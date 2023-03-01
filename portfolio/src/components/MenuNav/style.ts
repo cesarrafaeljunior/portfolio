@@ -6,7 +6,7 @@ const color = {
   colorBackGround: "#112026",
 };
 
-export const SectionMenuNavStyled = styled.section`
+export const SectionMenuNavStyled = styled.section<any>`
   position: absolute;
   top: 0;
   left: 0;
@@ -14,6 +14,14 @@ export const SectionMenuNavStyled = styled.section`
 
   width: 100%;
   height: 100%;
+
+  background-color: ${color.colorBackGround};
+
+  transition: ease-in 1s;
+
+  animation: ${({ animationEntrance }) =>
+      animationEntrance == "entrance" ? "entrance" : "exit"}
+    0.4s;
 
   nav {
     position: relative;
@@ -54,10 +62,26 @@ export const SectionMenuNavStyled = styled.section`
     }
   }
 
-  background-color: ${color.colorBackGround};
-
   @media (min-width: 720px) {
     width: 32%;
     border-right: 1px white solid;
+  }
+
+  @keyframes entrance {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes exit {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 `;
