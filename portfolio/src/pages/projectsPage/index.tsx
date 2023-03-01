@@ -8,7 +8,6 @@ import { MenuNav } from "../../components/MenuNav";
 export const ProjectsPage = () => {
   return (
     <ProjectsPageStyled>
-      <MenuNav />
       <section className="section__filter">
         <h2>Filtrar por:</h2>
         <div className="box__options">
@@ -18,6 +17,8 @@ export const ProjectsPage = () => {
             fontSize="18px"
             backgroundcolor="#2D3C42"
             color="#ffffff"
+            hover="#6C828B"
+            focus="#6C828B"
           >
             Front end
           </ButtonStyled>
@@ -27,6 +28,8 @@ export const ProjectsPage = () => {
             fontSize="18px"
             backgroundcolor="#2D3C42"
             color="#ffffff"
+            hover="#6C828B"
+            focus="#6C828B"
           >
             Back end
           </ButtonStyled>
@@ -36,6 +39,8 @@ export const ProjectsPage = () => {
             fontSize="18px"
             backgroundcolor="#2D3C42"
             color="#ffffff"
+            hover="#6C828B"
+            focus="#6C828B"
           >
             Todos
           </ButtonStyled>
@@ -55,7 +60,7 @@ export const ProjectsPage = () => {
           })}
         </ul>
       </section>
-      <Footer phrase="Você vai gostar do prêmio, mas você deve descer ao abismo para buscá-lo." />
+      <Footer phrase='"Você vai gostar do prêmio, mas você deve descer ao abismo para buscá-lo."' />
     </ProjectsPageStyled>
   );
 };

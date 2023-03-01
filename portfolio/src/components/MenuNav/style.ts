@@ -7,13 +7,13 @@ const color = {
 };
 
 export const SectionMenuNavStyled = styled.section<any>`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
 
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
 
   background-color: ${color.colorBackGround};
 
@@ -21,7 +21,7 @@ export const SectionMenuNavStyled = styled.section<any>`
 
   animation: ${({ animationEntrance }) =>
       animationEntrance == "entrance" ? "entrance" : "exit"}
-    0.4s;
+    0.6s;
 
   nav {
     position: relative;
@@ -63,7 +63,7 @@ export const SectionMenuNavStyled = styled.section<any>`
   }
 
   @media (min-width: 720px) {
-    width: 32%;
+    width: 22%;
     border-right: 1px white solid;
   }
 

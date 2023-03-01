@@ -35,6 +35,9 @@ export const ButtonStyled = styled.button<IButtonComponent>`
 
   &:hover {
     background-color: ${({ hover }) => `${hover}`};
-    border: solid 2px ${({ hover }) => `${hover}`};
+  }
+
+  &:focus {
+    background-color: ${({ focus }) => `${focus}`};
   }
 `;
