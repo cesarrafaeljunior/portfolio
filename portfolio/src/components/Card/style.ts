@@ -11,8 +11,12 @@ export const CardStyled = styled.li`
 
   padding: 1em;
 
+  transition: ease-in 0.3s;
+
   border: solid 2px #877b67;
   background-color: #44575f;
+
+  cursor: pointer;
 
   &:hover {
     border: solid 2px #f7d59a;
@@ -21,15 +25,18 @@ export const CardStyled = styled.li`
   &:hover img {
     filter: brightness(2);
   }
-
   img {
     width: 100%;
     height: 100%;
-    padding: 1em;
-    object-fit: cover;
-    cursor: pointer;
-  }
 
+    padding: 1em;
+
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+
+    transition: ease-in 0.3s;
+  }
   .section__description {
     width: 100%;
     height: 90%;
@@ -39,7 +46,6 @@ export const CardStyled = styled.li`
     max-height: 200px;
     text-overflow: ellipsis;
   }
-
   div {
     width: 100%;
     display: flex;
