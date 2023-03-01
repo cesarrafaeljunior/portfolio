@@ -6,9 +6,22 @@ const color = {
   colorBackGround: "#112026",
 };
 
-export const SectionMenuNavStyled = styled.section`
+export const SectionMenuNavStyled = styled.section<any>`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
   width: 100%;
   height: 100%;
+
+  background-color: ${color.colorBackGround};
+
+  transition: ease-in 1s;
+
+  animation: ${({ animationEntrance }) =>
+      animationEntrance == "entrance" ? "entrance" : "exit"}
+    0.4s;
 
   nav {
     position: relative;
@@ -47,60 +60,28 @@ export const SectionMenuNavStyled = styled.section`
         }
       }
     }
-
-    .box__links {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5em;
-
-      width: 100%;
-      height: 100%;
-
-      .lineNav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 70%;
-        height: 3.2px;
-
-        background-color: ${color.colorWhite};
-
-        transition: ease-in-out 0.3s;
-
-        .lineNavAnimation {
-          width: 100%;
-          height: 2.5px;
-        }
-      }
-      a {
-        transition: ease-in-out 0.3s;
-      }
-      a:hover {
-        color: ${color.colorHover};
-      }
-      a:hover ~ .lineNav > .lineNavAnimation {
-        background-color: ${color.colorHover};
-        animation: lineWidth 0.4s forwards;
-      }
-    }
   }
 
-  @keyframes lineWidth {
+  @media (min-width: 720px) {
+    width: 32%;
+    border-right: 1px white solid;
+  }
+
+  @keyframes entrance {
     0% {
-      width: 0%;
-    }
-    20% {
-      width: 10%;
-    }
-    30% {
-      width: 50%;
+      opacity: 0;
+      transform: translateX(-100%);
     }
     100% {
-      width: 100%;
+      transform: translateX(0);
     }
   }
-
-  background-color: ${color.colorBackGround};
+  @keyframes exit {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 `;

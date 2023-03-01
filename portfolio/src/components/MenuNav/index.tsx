@@ -1,10 +1,16 @@
 import { SectionMenuNavStyled } from "./style";
 import LogoAssasins from "../../assets/img/icons/assasin_icon.png";
 import CloseArrow from "../../assets/img/icons/closeArror-2.png";
+import { BoxLinks } from "./BoxLinks/indx";
 
-export const MenuNav = () => {
+export const MenuNav = ({
+  isOpenMenu,
+  setIsOpenMenu,
+  animationEntrance,
+  setAnimationEntrance,
+}: any) => {
   return (
-    <SectionMenuNavStyled>
+    <SectionMenuNavStyled animationEntrance={animationEntrance}>
       <nav>
         <figure>
           <img src={LogoAssasins} alt="Assasins Icon" />
@@ -12,38 +18,19 @@ export const MenuNav = () => {
             src={CloseArrow}
             alt="Assasins Icon"
             className="btn__closeArrow"
+            onClick={() => {
+              setAnimationEntrance("exit");
+              setTimeout(() => {
+                setIsOpenMenu(!isOpenMenu);
+              }, 250);
+            }}
           />
         </figure>
-        <div className="box__links">
-          <a href="#">Informações</a>
-          <span className="lineNav">
-            <span className="lineNavAnimation"></span>
-          </span>
-        </div>
-        <div className="box__links">
-          <a>Habilidades</a>
-          <span className="lineNav">
-            <span className="lineNavAnimation"></span>
-          </span>
-        </div>
-        <div className="box__links">
-          <a>Experiência</a>
-          <span className="lineNav">
-            <span className="lineNavAnimation"></span>
-          </span>
-        </div>
-        <div className="box__links">
-          <a>Projetos</a>
-          <span className="lineNav">
-            <span className="lineNavAnimation"></span>
-          </span>
-        </div>
-        <div className="box__links">
-          <a>Contato</a>
-          <span className="lineNav">
-            <span className="lineNavAnimation"></span>
-          </span>
-        </div>
+        <BoxLinks navOption="Informações" />
+        <BoxLinks navOption="Habilidades" />
+        <BoxLinks navOption="Experiência" />
+        <BoxLinks navOption="Projetos" />
+        <BoxLinks navOption="Contato" />
       </nav>
     </SectionMenuNavStyled>
   );
