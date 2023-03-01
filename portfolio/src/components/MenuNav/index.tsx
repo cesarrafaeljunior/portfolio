@@ -26,11 +26,11 @@ export const MenuNav = ({
             }}
           />
         </figure>
-        <BoxLinks navOption="Informações" />
-        <BoxLinks navOption="Habilidades" />
-        <BoxLinks navOption="Experiência" />
-        <BoxLinks navOption="Projetos" />
-        <BoxLinks navOption="Contato" />
+        <BoxLinks route="/informations" navOption="Informações" />
+        <BoxLinks route="/habilities" navOption="Habilidades" />
+        <BoxLinks route="/experience" navOption="Experiência" />
+        <BoxLinks route="/projects" navOption="Projetos" />
+        <BoxLinks route="/contact" navOption="Contato" />
       </nav>
     </SectionMenuNavStyled>
   );

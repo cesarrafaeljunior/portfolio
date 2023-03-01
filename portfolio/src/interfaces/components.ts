@@ -21,5 +21,6 @@ export interface IButtonComponent {
   fontSize?: string;
   hover?: string;
   fontWeigth?: string;
+  focus?: String;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }

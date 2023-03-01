@@ -5,6 +5,7 @@ export interface IChildren {
 }
 
 export interface INavOptions {
+  route?: String;
   navOption: string;
 }
 

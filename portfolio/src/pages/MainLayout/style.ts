@@ -2,13 +2,15 @@ import styled from "styled-components";
 
 export const MainLayoutStyled = styled.main`
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
   background-color: #112026;
 
   .btn__openArrow {
+    display: flex;
     position: absolute;
     top: 1em;
     left: 0.5em;
+    z-index: 2;
 
     width: 35px;
     height: 35px;
