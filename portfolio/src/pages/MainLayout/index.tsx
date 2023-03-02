@@ -10,25 +10,8 @@ export const MainLayout = () => {
 
   return (
     <MainLayoutStyled>
-      {isOpenMenu ? (
-        <MenuNav
-          isOpenMenu={isOpenMenu}
-          setIsOpenMenu={setIsOpenMenu}
-          animationEntrance={animationEntrance}
-          setAnimationEntrance={setAnimationEntrance}
-        />
-      ) : (
-        <img
-          src={OpenArrow}
-          alt="Assasins Icon"
-          className="btn__openArrow"
-          onClick={() => {
-            setAnimationEntrance("entrance");
-            setIsOpenMenu(!isOpenMenu);
-          }}
-        />
-      )}
-      <Outlet />
+      <MenuNav />
+      {/* <Outlet /> */}
     </MainLayoutStyled>
   );
 };
