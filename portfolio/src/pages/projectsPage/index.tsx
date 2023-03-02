@@ -3,9 +3,12 @@ import { ButtonStyled } from "../../components/common/Button/style";
 import { Footer } from "../../components/common/Footer";
 import { ProjectsPageStyled } from "./style";
 import { projects } from "../../database";
-import { MenuNav } from "../../components/MenuNav";
+import { useContext } from "react";
+import { projectContext } from "../../contexts/ProjectContext";
 
 export const ProjectsPage = () => {
+  const { projectsFiltered, projectsFilter } = useContext(projectContext);
+
   return (
     <ProjectsPageStyled>
       <section className="section__filter">
@@ -19,6 +22,7 @@ export const ProjectsPage = () => {
             color="#ffffff"
             hover="#6C828B"
             focus="#6C828B"
+            onClick={(e) => projectsFilter(e.target.dispatchEvent)}
           >
             Front end
           </ButtonStyled>

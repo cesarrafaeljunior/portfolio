@@ -1,3 +1,10 @@
+import { Footer } from "../../components/common/Footer";
+import { InformationsPageStyled } from "./style";
+
 export const InformationPage = () => {
-  return <h1>Sou a pagina de informações</h1>;
+  return (
+    <InformationsPageStyled>
+      <Footer phrase='"Você encontra a resposta quando você não precisa perguntar"' />
+    </InformationsPageStyled>
+  );
 };

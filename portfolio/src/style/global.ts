@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 body{
         width: 100vw;
         height: 100vh;
+        overflow-x: hidden;
     }
     *{
         margin: 0;
@@ -13,7 +14,7 @@ body{
         font-family: 'Inter', sans-serif;
         &::-webkit-scrollbar {
         width: 5px;
-        height: 3px; /* A altura só é vista quando a rolagem é horizontal */
+        height: 3px;
       }
         &::-webkit-scrollbar-thumb {
         background-color: #f7d59a;

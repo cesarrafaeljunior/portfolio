@@ -7,6 +7,7 @@ export interface IProjects {
   deploy: string | null;
   techs: string[];
   team: boolean;
+  documentation?: String;
 }
 
 export interface ICardInfos {
