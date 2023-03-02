@@ -7,26 +7,59 @@ const color = {
   colorFont: "#586973",
 };
 export const BoxLinksStyled = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5em;
+  justify-content: flex-end;
 
-  width: 10%;
-  height: 40px;
+  width: 5%;
+  height: 100%;
 
-  .text {
+  padding-bottom: 0.5em;
+
+  border: solid 1px transparent;
+
+  transition: ease 0.3s;
+
+  cursor: pointer;
+
+  font-size: 17px;
+
+  .blur__box {
+    width: 50%;
+    transition: ease 0.3s;
+  }
+
+  .text__link {
     color: ${color.colorFont};
   }
 
-  &:hover .blur {
-    width: 100%;
-    height: 100%;
-    background-color: ${color.colorHover};
-    filter: blur(1.5em) brightness(10);
+  &:hover {
+    border-bottom: solid 1px white;
+    filter: brightness(1);
   }
 
-  &:hover .text {
+  &:hover .blur__box {
+    height: 35%;
+    position: absolute;
+    background-color: ${color.colorHover};
+    filter: blur(2em);
+  }
+
+  &:hover .text__link {
+    color: ${color.colorHover};
+  }
+
+  a {
+    position: static;
+    z-index: 2;
+
+    width: 100%;
+    text-align: center;
+  }
+
+  a:focus {
     color: ${color.colorHover};
   }
 `;

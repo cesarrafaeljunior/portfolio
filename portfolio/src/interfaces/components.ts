@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface IButtonComponent {
   display?: string;
   alignItems?: string;
@@ -23,4 +25,32 @@ export interface IButtonComponent {
   fontWeigth?: string;
   focus?: String;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+}
+
+export interface ICardComponent extends IButtonComponent {
+  children?: ReactNode;
+  flexDirection?: String;
+  cursor?: String;
+}
+
+export interface ICardHighlightComponent {
+  img: any;
+  title: string;
+  link: string;
+}
+
+export interface ICardIconsComponent extends ICardHighlightComponent {}
+
+export interface IInputComponent {
+  placeholder: string;
+}
+
+export interface IDivComponent {
+  display?: string;
+  alignItems?: string;
+  justifyContent?: string;
+  gap?: string;
+  width?: string;
+  height?: string;
+  className?: String;
 }

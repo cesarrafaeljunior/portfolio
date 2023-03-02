@@ -5,10 +5,10 @@ import { BoxLinksStyled } from "./style";
 export const BoxLinks = ({ route, navOption }: INavOptions) => {
   return (
     <BoxLinksStyled>
-      <Link to={`${route}`} className="text">
+      <Link to={`${route}`} className="text__link">
         {navOption}
       </Link>
-      <div className="blur"></div>
+      <div className="blur__box"></div>
     </BoxLinksStyled>
   );
 };
