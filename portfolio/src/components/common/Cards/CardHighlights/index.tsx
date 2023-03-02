@@ -20,7 +20,7 @@ export const CardHighlight = ({
       hover={color.hoverBorder}
       position="relative"
     >
-      <a href={link} target="blank"></a>
+      <a href={link} target="_blank"></a>
       <div className="banner_card">
         <p>{title}</p>
       </div>
