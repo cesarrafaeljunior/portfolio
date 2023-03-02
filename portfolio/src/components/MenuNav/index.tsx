@@ -1,11 +1,10 @@
-import { SectionMenuNavStyled } from "./style";
+import { HeaderStyled } from "./style";
 import LogoAssasins from "../../assets/img/icons/assasin_icon.png";
-import CloseArrow from "../../assets/img/icons/closeArror-2.png";
 import { BoxLinks } from "./BoxLinks/indx";
 
 export const MenuNav = () => {
   return (
-    <SectionMenuNavStyled>
+    <HeaderStyled>
       <nav>
         <BoxLinks route="/informations" navOption="Informações" />
         <BoxLinks route="/habilities" navOption="Habilidades" />
@@ -13,6 +12,6 @@ export const MenuNav = () => {
         <BoxLinks route="/projects" navOption="Projetos" />
         <BoxLinks route="/contact" navOption="Contato" />
       </nav>
-    </SectionMenuNavStyled>
+    </HeaderStyled>
   );
 };
