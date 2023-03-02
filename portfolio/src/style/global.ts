@@ -20,7 +20,7 @@ body{
         background-color: #f7d59a;
       }
     }
-    ul,ol{
+    ul,ol,li{
         list-style: none;
     }
     a{

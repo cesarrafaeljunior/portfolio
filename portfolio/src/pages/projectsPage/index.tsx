@@ -1,4 +1,3 @@
-import { Card } from "../../components/Card";
 import { ButtonStyled } from "../../components/common/Button/style";
 import { Footer } from "../../components/common/Footer";
 import { ProjectsPageStyled } from "./style";
@@ -22,7 +21,6 @@ export const ProjectsPage = () => {
             color="#ffffff"
             hover="#6C828B"
             focus="#6C828B"
-            onClick={(e) => projectsFilter(e.target.dispatchEvent)}
           >
             Front end
           </ButtonStyled>
@@ -51,18 +49,7 @@ export const ProjectsPage = () => {
         </div>
       </section>
       <section className="section__list">
-        <ul>
-          {projects.map((elem) => {
-            return (
-              <Card
-                name={elem.name}
-                image={elem.image}
-                type={elem.type}
-                description={elem.description}
-              />
-            );
-          })}
-        </ul>
+        <ul></ul>
       </section>
       <Footer phrase='"Você vai gostar do prêmio, mas você deve descer ao abismo para buscá-lo."' />
     </ProjectsPageStyled>
