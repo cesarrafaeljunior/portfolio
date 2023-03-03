@@ -13,7 +13,7 @@ export const BoxLinksStyled = styled.div`
   align-items: center;
   justify-content: flex-end;
 
-  width: 5%;
+  width: 8%;
   height: 100%;
 
   padding-bottom: 0.5em;
@@ -27,12 +27,28 @@ export const BoxLinksStyled = styled.div`
   font-size: 17px;
 
   .blur__box {
-    width: 50%;
+    width: 100%;
     transition: ease 0.3s;
   }
 
   .text__link {
     color: ${color.colorFont};
+  }
+
+  ::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: ${color.colorHover};
+    transition: 0.3s linear;
+  }
+
+  &:hover::after {
+    background-color: ${color.colorHover};
+    width: 100%;
   }
 
   &:hover {
@@ -50,7 +66,6 @@ export const BoxLinksStyled = styled.div`
   &:hover .text__link {
     color: ${color.colorHover};
   }
-
   a {
     position: static;
     z-index: 2;

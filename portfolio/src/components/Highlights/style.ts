@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "animate.css";
 
 export const HighlightsStyled = styled.section`
   display: flex;
@@ -7,6 +8,8 @@ export const HighlightsStyled = styled.section`
 
   width: 100%;
   height: 50%;
+
+  animation-duration: 1.5s;
 
   font-size: 1.3em;
 

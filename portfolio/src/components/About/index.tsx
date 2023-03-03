@@ -3,7 +3,7 @@ import { AboutStyled } from "./style";
 
 export const About = () => {
   return (
-    <AboutStyled>
+    <AboutStyled className="animate__fadeInLeftBig">
       <CardStyled
         width="470px"
         height="605px"

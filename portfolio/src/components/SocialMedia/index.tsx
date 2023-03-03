@@ -5,7 +5,7 @@ import { CardIcons } from "../common/Cards/CardIcons";
 import { Input } from "../common/Input";
 export const SocialMedia = () => {
   return (
-    <SocialMediaStyled>
+    <SocialMediaStyled className="animate__fadeInUp">
       <h2>Redes sociais</h2>
       <div className="box__cardIcons">
         <CardIcons
