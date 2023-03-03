@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "animate.css";
 
 export const SocialMediaStyled = styled.section`
   display: flex;
@@ -10,6 +11,8 @@ export const SocialMediaStyled = styled.section`
   width: 100%;
   height: 100%;
   margin: 2em 0;
+
+  animation-duration: 1.3s;
 
   h2 {
     color: #ffffff;
@@ -34,9 +37,7 @@ export const SocialMediaStyled = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2em;
-
-    margin-top: 1.5em;
+    gap: 0.5em;
   }
 
   .box__contact {
