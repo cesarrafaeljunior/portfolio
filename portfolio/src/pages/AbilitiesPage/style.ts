@@ -10,12 +10,15 @@ const color = {
 
 export const AbilitiesPageStyled = styled.section`
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 20em;
 
   width: 100%;
   min-height: calc(100vh - 80px);
   padding: 2em 2em 1em 2em;
+
+  border: solid 1px red;
 
   background: linear-gradient(
     217deg,

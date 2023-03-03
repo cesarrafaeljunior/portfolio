@@ -41,6 +41,16 @@ export interface ICardHighlightComponent {
 
 export interface ICardIconsComponent extends ICardHighlightComponent {}
 
+export interface ICardSkillsComponent {
+  icon?: any;
+  alt?: string;
+  position?: string;
+  top?: string;
+  bottom?: string;
+  right?: string;
+  left?: string;
+}
+
 export interface IInputComponent {
   placeholder: string;
 }
