@@ -8,8 +8,14 @@ export const SkillsTreeStyled = styled.div`
   gap: 1em;
 
   position: static;
-  z-index: 1;
 
   width: 266px;
-  min-height: 430px;
+  min-height: 480px;
+
+  p {
+    align-self: center;
+    color: #f7d59a;
+    font-size: 18px;
+    font-weight: 500;
+  }
 `;

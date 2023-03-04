@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import { ICardSkillStyledComponent } from "../../../../interfaces/components";
 
-export const CardSkillsStyled = styled.div`
+export const CardSkillsStyled = styled.div<ICardSkillStyledComponent>`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,6 +15,8 @@ export const CardSkillsStyled = styled.div`
   background-color: #2c434b;
 
   cursor: pointer;
+
+  z-index: 2;
 
   img {
     width: 40px;
@@ -32,5 +36,38 @@ export const CardSkillsStyled = styled.div`
     height: 90%;
     border: solid 1px white;
     border-radius: 100%;
+  }
+
+  &::before {
+    content: "";
+    display: ${({ display }) => `${display}`};
+    width: 20px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: ${({ top }) => `${top}`};
+    right: ${({ right }) => `${right}`};
+    left: ${({ left }) => `${left}`};
+    bottom: ${({ bottom }) => `${bottom}`};
+    rotate: ${({ rotate }) => `${rotate}`};
+  }
+
+  &::after {
+    display: flex;
+    align-items: center;
+    content: "";
+    justify-content: center;
+    width: 400px;
+    height: max-content;
+    position: fixed;
+    bottom: 5em;
+    right: 35%;
+    border: solid 1px red;
+    z-index: 2;
+  }
+
+  &:hover::after {
+    content: "${({ description }) => `${description}`}";
+    color: white;
   }
 `;
