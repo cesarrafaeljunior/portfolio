@@ -51,6 +51,7 @@ export interface ICardSkillsComponent {
   right?: string;
   left?: string;
   rotate?: string;
+  description?: string;
 }
 
 export interface ICardSkillStyledComponent {
@@ -60,6 +61,7 @@ export interface ICardSkillStyledComponent {
   left?: string;
   bottom?: string;
   rotate?: string;
+  description?: string;
 }
 
 export interface IInputComponent {

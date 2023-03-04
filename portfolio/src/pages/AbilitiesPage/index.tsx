@@ -82,7 +82,12 @@ export const AbilitiesPage = () => {
             />
             {techs.map((elem) =>
               elem.type == "front_end" ? (
-                <CardSkills icon={elem.image} alt={elem.tech} display="none" />
+                <CardSkills
+                  icon={elem.image}
+                  alt={elem.tech}
+                  display="none"
+                  description={elem.description}
+                />
               ) : null
             )}
           </Div>
@@ -173,7 +178,12 @@ export const AbilitiesPage = () => {
             />
             {techs.map((elem) =>
               elem.type == "back_end" ? (
-                <CardSkills icon={elem.image} alt={elem.tech} display="none" />
+                <CardSkills
+                  icon={elem.image}
+                  alt={elem.tech}
+                  display="none"
+                  description={elem.description}
+                />
               ) : null
             )}
           </Div>
