@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const SkillsTreeStyled = styled.div`
-  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
   gap: 1em;
 
-  width: 266px;
-  height: 488px;
+  position: static;
+  z-index: 1;
 
-  border: solid 1px red;
+  width: 266px;
+  min-height: 430px;
 `;
