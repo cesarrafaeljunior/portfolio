@@ -57,9 +57,13 @@ export interface IInputComponent {
 
 export interface IDivComponent {
   display?: string;
+  wrap?: string;
+  flexDirection?: string;
   alignItems?: string;
   justifyContent?: string;
   gap?: string;
+  margin?: string;
+  padding?: string;
   width?: string;
   height?: string;
   className?: String;

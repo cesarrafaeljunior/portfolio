@@ -13,6 +13,9 @@ export const HeaderStyled = styled.header`
   align-items: center;
   justify-content: center;
 
+  position: relative;
+  z-index: 1;
+
   width: 100%;
   height: 80px;
 

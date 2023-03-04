@@ -1,107 +1,118 @@
-import HmtlIcon from "../../assets/img/icons/html_icon.png";
-import CssIcon from "../../assets/img/icons/css_icon.png";
-import JsIcon from "../../assets/img/icons/javaScript_icon.png";
-import GitIcon from "../../assets/img/icons/git_icon.png";
-import GitHub from "../../assets/img/icons/github_icon.png";
-import ReactIcon from "../../assets/img/icons/react_icon.png";
-import NodeIcon from "../../assets/img/icons/node_icon.png";
+import { techs } from "../../database/techs";
 import { CardSkills } from "../../components/common/Cards/CardSkills";
 import { SkillTree } from "../../components/SkillsTree";
 import { AbilitiesPageStyled } from "./style";
+import { Div } from "../../components/common/Div/style";
 
 export const AbilitiesPage = () => {
   return (
     <AbilitiesPageStyled>
       <SkillTree>
-        <CardSkills
-          icon={null}
-          alt="Null icon"
-          position="absolute"
-          top="0"
-          right="0"
-        />
-        <CardSkills
-          icon={null}
-          alt="Null icon"
-          position="absolute"
-          top="5em"
-          right="0"
-        />
-        <CardSkills
-          icon={null}
-          alt="Null icon"
-          position="absolute"
-          top="10em"
-          right="5em"
-        />
-        <CardSkills
-          icon={null}
-          alt="Null Icon"
-          position="absolute"
-          top="10em"
-          right="0"
-        />
-        <CardSkills
-          icon={null}
-          alt="Null Icon"
-          position="absolute"
-          top="10em"
-          right="10em"
-        />
-        <CardSkills
-          icon={GitIcon}
-          alt="Git icon"
-          position="absolute"
-          top="15em"
-          right="0"
-        />
-        <CardSkills
-          icon={GitHub}
-          alt="GitHub icon"
-          position="absolute"
-          top="15em"
-          right="5em"
-        />
-        <CardSkills
-          icon={ReactIcon}
-          alt="React icon"
-          position="absolute"
-          top="15em"
-          right="10em"
-        />
-        <CardSkills
-          icon={JsIcon}
-          alt="JavaScript icon"
-          position="absolute"
-          top="20em"
-          right="0"
-        />
-        <CardSkills
-          icon={CssIcon}
-          alt="Css icon"
-          position="absolute"
-          top="20em"
-          right="5em"
-        />
-        <CardSkills
-          icon={HmtlIcon}
-          alt="Html icon"
-          position="absolute"
-          top="20em"
-          right="10em"
-        />
+        <Div
+          display="flex"
+          flexDirection="column"
+          gap="1em"
+          padding="0 0.5em 0 0"
+        >
+          <CardSkills icon={null} alt="nullTech" />
+          <CardSkills icon={null} alt="nullTech" />
+        </Div>
+        <Div
+          display="flex"
+          gap="1em"
+          wrap="wrap"
+          width="100%"
+          height="100%"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <CardSkills icon={null} alt="nullTech" />
+          <CardSkills icon={null} alt="nullTech" />
+          <CardSkills icon={null} alt="nullTech" />
+          <CardSkills icon={null} alt="nullTech" />
+          <CardSkills icon={null} alt="nullTech" />
+          {techs.map((elem) =>
+            elem.type == "front_end" ? (
+              <CardSkills icon={elem.image} alt={elem.tech} />
+            ) : null
+          )}
+        </Div>
       </SkillTree>
       <SkillTree>
-        <CardSkills icon={null} alt="Null icon" />
-        <CardSkills icon={null} alt="Null icon" />
-        <CardSkills icon={null} alt="Null icon" />
-        <CardSkills icon={null} alt="Null Icon" />
-        <CardSkills icon={GitIcon} alt="Git icon" />
-        <CardSkills icon={GitHub} alt="GitHub icon" />
-        <CardSkills icon={ReactIcon} alt="React icon" />
-        <CardSkills icon={HmtlIcon} alt="Html icon" />
-        <CardSkills icon={CssIcon} alt="Css icon" />
-        <CardSkills icon={NodeIcon} alt="Node icon" />
+        <Div
+          display="flex"
+          width="100%"
+          height="50%"
+          alignItems="center"
+          justifyContent="center"
+          padding="0 0.5em 0 0"
+        >
+          <CardSkills icon={null} alt="nullTech" />
+        </Div>
+        <Div
+          display="flex"
+          gap="1.2em"
+          wrap="wrap"
+          width="100%"
+          height="50%"
+          alignItems="center"
+          justifyContent="flex-end"
+          padding="0 0.5em 0 0"
+        >
+          <CardSkills icon={null} alt="nullTech" />
+          <CardSkills icon={null} alt="nullTech" />
+        </Div>
+        <Div
+          display="flex"
+          gap="1em"
+          wrap="wrap"
+          width="100%"
+          height="50%"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <CardSkills icon={null} alt="nullTech" />
+          <CardSkills icon={null} alt="nullTech" />
+          <CardSkills icon={null} alt="nullTech" />
+          <CardSkills icon={null} alt="nullTech" />
+          <CardSkills icon={null} alt="nullTech" />
+          <CardSkills icon={null} alt="nullTech" />
+          {techs.map((elem) =>
+            elem.type == "back_end" ? (
+              <CardSkills icon={elem.image} alt={elem.tech} />
+            ) : null
+          )}
+        </Div>
+      </SkillTree>
+      <SkillTree>
+        <Div
+          display="flex"
+          gap="1em"
+          wrap="wrap"
+          width="100%"
+          height="50%"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <CardSkills icon={null} alt="nullTech" />
+        </Div>
+        <Div
+          display="flex"
+          gap="1em"
+          wrap="wrap"
+          width="100%"
+          height="50%"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <CardSkills icon={null} alt="nullTech" />
+          <CardSkills icon={null} alt="nullTech" />
+          {techs.map((elem) =>
+            elem.type == "passive" ? (
+              <CardSkills icon={elem.image} alt={elem.tech} />
+            ) : null
+          )}
+        </Div>
       </SkillTree>
     </AbilitiesPageStyled>
   );
