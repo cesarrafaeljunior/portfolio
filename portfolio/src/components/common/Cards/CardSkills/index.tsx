@@ -11,6 +11,7 @@ export const CardSkills = ({
   left,
   bottom,
   rotate,
+  description,
 }: ICardSkillsComponent) => {
   return (
     <CardSkillsStyled
@@ -20,6 +21,7 @@ export const CardSkills = ({
       left={left}
       bottom={bottom}
       rotate={rotate}
+      description={description}
     >
       <div className="border__inside">
         {icon ? (
@@ -31,7 +33,6 @@ export const CardSkills = ({
             <img src={NoneIcon} alt="None icon" />
           </figure>
         )}
-        <div className="description__true"></div>
       </div>
     </CardSkillsStyled>
   );

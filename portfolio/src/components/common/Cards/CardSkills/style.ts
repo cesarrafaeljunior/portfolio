@@ -51,4 +51,23 @@ export const CardSkillsStyled = styled.div<ICardSkillStyledComponent>`
     bottom: ${({ bottom }) => `${bottom}`};
     rotate: ${({ rotate }) => `${rotate}`};
   }
+
+  &::after {
+    display: flex;
+    align-items: center;
+    content: "";
+    justify-content: center;
+    width: 400px;
+    height: max-content;
+    position: fixed;
+    bottom: 5em;
+    right: 35%;
+    border: solid 1px red;
+    z-index: 2;
+  }
+
+  &:hover::after {
+    content: "${({ description }) => `${description}`}";
+    color: white;
+  }
 `;
