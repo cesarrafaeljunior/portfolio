@@ -7,13 +7,16 @@ const color = {
   colorBackGround_secundary: "#070D10",
   colorBorder: "#6c828b",
   colorFont: "#586973",
+  colorFontSecundary: "#F7D59A",
+  colorDefault: "#ffffff",
 };
 
 export const AbilitiesPageStyled = styled.section`
   position: relative;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
   width: 100%;
   min-height: calc(100vh - 80px);
@@ -38,5 +41,28 @@ export const AbilitiesPageStyled = styled.section`
     ${color.colorBackGround_secundary},
     ${color.colorBackGround} 70.71%
   );
-  background-color: #1d2d35;
+
+  .ability__points {
+    position: absolute;
+    top: 1em;
+    right: 3em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 8em;
+      height: 8em;
+    }
+    .text__points {
+      color: ${color.colorDefault};
+      font-size: 1.2em;
+    }
+    .quantity__points {
+      color: ${color.colorFontSecundary};
+      font-size: 2em;
+    }
+  }
 `;

@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 export interface IChildren {
   children: ReactNode;
+  title?: string;
 }
 
 export interface INavOptions {
