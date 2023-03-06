@@ -1,10 +1,10 @@
+import { useState } from "react";
 import { HeaderStyled } from "./style";
-import LogoAssasins from "../../assets/img/icons/assasin_icon.png";
 import { BoxLinks } from "./BoxLinks/indx";
 
-export const MenuNav = () => {
+export const MenuNav = ({ className }: any) => {
   return (
-    <HeaderStyled>
+    <HeaderStyled className={className}>
       <nav>
         <BoxLinks route="/informations" navOption="Informações" />
         <BoxLinks route="/abilities" navOption="Habilidades" />

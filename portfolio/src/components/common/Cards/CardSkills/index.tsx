@@ -21,7 +21,6 @@ export const CardSkills = ({
       left={left}
       bottom={bottom}
       rotate={rotate}
-      description={description}
     >
       <div className="border__inside">
         {icon ? (
@@ -33,6 +32,9 @@ export const CardSkills = ({
             <img src={NoneIcon} alt="None icon" />
           </figure>
         )}
+      </div>
+      <div className="description">
+        {description ? description : "Habilidade indisponível"}
       </div>
     </CardSkillsStyled>
   );
