@@ -5,8 +5,8 @@ export const About = () => {
   return (
     <AboutStyled className="animate__fadeInLeftBig">
       <CardStyled
-        width="470px"
-        height="605px"
+        width="100%"
+        height="100%"
         padding="1em"
         display="flex"
         alignItems="center"

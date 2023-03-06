@@ -9,13 +9,13 @@ const color = {
 };
 
 export const InformationsPageStyled = styled.section`
+  width: 100%;
+  height: 100%;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
 
-  width: 100%;
-  min-height: calc(100vh - 95px);
-  padding: 2em 2em 1em 2em;
+  padding: 1em 1em;
 
   background: linear-gradient(
     217deg,
@@ -26,12 +26,24 @@ export const InformationsPageStyled = styled.section`
   transition: ease 0.3s;
 
   .box__informations {
+    width: 100%;
+    height: 100%;
+
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 10em;
+    gap: 5em;
 
-    height: calc(100vh - 95px);
+    height: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .box__informations {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-top: 1.5em;
+    }
   }
 `;
