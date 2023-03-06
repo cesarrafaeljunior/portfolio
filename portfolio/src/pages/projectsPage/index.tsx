@@ -1,7 +1,6 @@
 import { ButtonStyled } from "../../components/common/Button/style";
 import { Footer } from "../../components/common/Footer";
 import { ProjectsPageStyled } from "./style";
-import { projects } from "../../database";
 import { useContext } from "react";
 import { projectContext } from "../../contexts/ProjectContext";
 
