@@ -17,9 +17,10 @@ export const AbilitiesPage = () => {
       <Div
         display="flex"
         alignItems="center"
-        justifyContent="space-around"
+        justifyContent="center"
         width="100%"
         height="100%"
+        gap="10em"
       >
         <SkillTree title="Front-End">
           <Div
@@ -228,7 +229,12 @@ export const AbilitiesPage = () => {
             />
             {techs.map((elem) =>
               elem.type == "passive" ? (
-                <CardSkills icon={elem.image} alt={elem.tech} display="none" />
+                <CardSkills
+                  icon={elem.image}
+                  alt={elem.tech}
+                  display="none"
+                  description={elem.description}
+                />
               ) : null
             )}
           </Div>

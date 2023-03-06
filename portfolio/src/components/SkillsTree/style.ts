@@ -8,6 +8,7 @@ export const SkillsTreeStyled = styled.div`
   gap: 1em;
 
   position: static;
+  z-index: 1;
 
   width: 266px;
   min-height: 480px;

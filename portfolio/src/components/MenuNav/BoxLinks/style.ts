@@ -11,10 +11,9 @@ export const BoxLinksStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 
-  width: 8%;
-  height: 100%;
+  width: 40%;
 
   padding-bottom: 0.5em;
 
@@ -26,13 +25,29 @@ export const BoxLinksStyled = styled.div`
 
   font-size: 17px;
 
+  &:hover {
+    border-bottom: solid 1px white;
+    filter: brightness(1);
+  }
+
   .blur__box {
-    width: 100%;
     transition: ease 0.3s;
+  }
+
+  &:hover .blur__box {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: ${color.colorHover};
+    filter: blur(1.8em);
   }
 
   .text__link {
     color: ${color.colorFont};
+  }
+
+  &:hover .text__link {
+    color: ${color.colorHover};
   }
 
   ::after {
@@ -41,7 +56,7 @@ export const BoxLinksStyled = styled.div`
     bottom: 0;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 1px;
     background-color: ${color.colorHover};
     transition: 0.3s linear;
   }
@@ -51,21 +66,6 @@ export const BoxLinksStyled = styled.div`
     width: 100%;
   }
 
-  &:hover {
-    border-bottom: solid 1px white;
-    filter: brightness(1);
-  }
-
-  &:hover .blur__box {
-    height: 35%;
-    position: absolute;
-    background-color: ${color.colorHover};
-    filter: blur(2em);
-  }
-
-  &:hover .text__link {
-    color: ${color.colorHover};
-  }
   a {
     position: static;
     z-index: 2;
@@ -76,5 +76,9 @@ export const BoxLinksStyled = styled.div`
 
   a:focus {
     color: ${color.colorHover};
+  }
+
+  @media (min-width: 768px) {
+    width: 10%;
   }
 `;

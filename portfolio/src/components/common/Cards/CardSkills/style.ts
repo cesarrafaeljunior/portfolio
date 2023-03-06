@@ -16,8 +16,6 @@ export const CardSkillsStyled = styled.div<ICardSkillStyledComponent>`
 
   cursor: pointer;
 
-  z-index: 2;
-
   img {
     width: 40px;
     height: 30px;
@@ -52,22 +50,37 @@ export const CardSkillsStyled = styled.div<ICardSkillStyledComponent>`
     rotate: ${({ rotate }) => `${rotate}`};
   }
 
-  &::after {
-    display: flex;
+  .description {
+    display: none;
     align-items: center;
-    content: "";
     justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+    right: -40em;
+
+    z-index: 10;
+
     width: 400px;
-    height: max-content;
-    position: fixed;
-    bottom: 5em;
-    right: 35%;
-    border: solid 1px red;
-    z-index: 2;
+    padding: 1em 1em;
+
+    background-color: #1d2d35;
+    border: solid 1px #f7d59a;
   }
 
-  &:hover::after {
-    content: "${({ description }) => `${description}`}";
+  &:hover .description {
+    display: flex;
     color: white;
+    right: -10em;
+    animation: modalDescription 0.8s forwards;
+  }
+
+  @keyframes modalDescription {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 `;
