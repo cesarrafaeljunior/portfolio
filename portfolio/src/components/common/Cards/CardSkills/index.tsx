@@ -33,9 +33,6 @@ export const CardSkills = ({
           </figure>
         )}
       </div>
-      <div className="description">
-        {description ? description : "Habilidade indisponível"}
-      </div>
     </CardSkillsStyled>
   );
 };

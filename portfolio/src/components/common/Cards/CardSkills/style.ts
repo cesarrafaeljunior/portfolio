@@ -50,24 +50,6 @@ export const CardSkillsStyled = styled.div<ICardSkillStyledComponent>`
     rotate: ${({ rotate }) => `${rotate}`};
   }
 
-  .description {
-    display: none;
-    align-items: center;
-    justify-content: center;
-
-    position: absolute;
-    bottom: 0;
-    right: -40em;
-
-    z-index: 10;
-
-    width: 400px;
-    padding: 1em 1em;
-
-    background-color: #1d2d35;
-    border: solid 1px #f7d59a;
-  }
-
   &:hover .description {
     display: flex;
     color: white;

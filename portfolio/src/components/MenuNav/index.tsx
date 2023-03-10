@@ -8,7 +8,6 @@ export const MenuNav = ({ className }: any) => {
       <nav>
         <BoxLinks route="/informations" navOption="Informações" />
         <BoxLinks route="/abilities" navOption="Habilidades" />
-        <BoxLinks route="/experience" navOption="Experiência" />
         <BoxLinks route="/projects" navOption="Projetos" />
         <BoxLinks route="/contact" navOption="Contato" />
       </nav>
