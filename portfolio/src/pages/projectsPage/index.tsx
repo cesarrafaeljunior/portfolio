@@ -3,6 +3,9 @@ import { Footer } from "../../components/common/Footer";
 import { ProjectsPageStyled } from "./style";
 import { useContext } from "react";
 import { projectContext } from "../../contexts/ProjectContext";
+import { Div } from "../../components/common/Div/style";
+import { projects } from "../../database/projects";
+import { CardHighlight } from "../../components/common/Cards/CardHighlights";
 
 export const ProjectsPage = () => {
   const { projectsFiltered, projectsFilter } = useContext(projectContext);
@@ -11,7 +14,14 @@ export const ProjectsPage = () => {
     <ProjectsPageStyled>
       <section className="section__filter">
         <h2>Filtrar por:</h2>
-        <div className="box__options">
+        <Div
+          display="flex"
+          wrap="wrap"
+          justifyContent="center"
+          alignItems="center"
+          gap="0.8em"
+          className="box__options"
+        >
           <ButtonStyled
             width="150px"
             height="44px"
@@ -45,10 +55,18 @@ export const ProjectsPage = () => {
           >
             Todos
           </ButtonStyled>
-        </div>
+        </Div>
       </section>
       <section className="section__list">
-        <ul></ul>
+        <ul>
+          {projects.map((elem) => (
+            <CardHighlight
+              title={elem.name}
+              img={elem.image}
+              type={elem.type}
+            />
+          ))}
+        </ul>
       </section>
       <Footer phrase='"Você vai gostar do prêmio, mas você deve descer ao abismo para buscá-lo."' />
     </ProjectsPageStyled>
