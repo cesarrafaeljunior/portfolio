@@ -8,9 +8,25 @@ import { InformationsPageStyled } from "./style";
 export const InformationPage = () => {
   return (
     <InformationsPageStyled>
-      <Div className="box__informations">
+      <Div
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        justifyContent="center"
+        width="100%"
+        height="100%"
+        gap="5em"
+        className="box__informations"
+      >
         <About />
-        <Div className="box__aside">
+        <Div
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          gap="3em"
+          className="box__aside"
+        >
+          <h2>Em destaques</h2>
           <Highlights />
           <SocialMedia />
         </Div>

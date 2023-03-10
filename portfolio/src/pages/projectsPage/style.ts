@@ -9,7 +9,7 @@ export const ProjectsPageStyled = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   padding: 1em;
 
@@ -26,44 +26,41 @@ export const ProjectsPageStyled = styled.section`
     gap: 1em;
 
     width: 100%;
+    max-width: 1300px;
 
-    margin-bottom: 2em;
+    margin-top: 3em;
 
     @media (min-width: 1220px) {
       flex-direction: row;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
-
-      margin: 0 20em 0 0;
     }
   }
 
   .box__options {
-    display: flex;
-    align-items: center;
-    gap: 0.8em;
     @media (min-width: 720px) {
       gap: 2em;
     }
   }
 
   .section__list {
+    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 1em;
+
     ul {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      gap: 1em;
+      gap: 3em;
 
       width: 100%;
-      max-width: 1200px;
-      height: 100vh;
+      height: 100%;
 
-      overflow-x: auto;
+      padding: 2em;
     }
   }
 
@@ -71,6 +68,7 @@ export const ProjectsPageStyled = styled.section`
     align-self: center;
     @media (min-width: 720px) {
       font-size: 15px;
+      margin-top: 10%;
     }
   }
 `;

@@ -9,14 +9,20 @@ const MksDeploy =
 
 export const Highlights = () => {
   return (
-    <HighlightsStyled
-      className="animate__fadeInDown"
-      aria-labelledby="highlights"
-    >
-      <h2 id="highlights">Em destaques</h2>
+    <HighlightsStyled className="animate__fadeInDown">
       <div className="box__cards__highlights">
-        <CardHighlight img={PortGeek} title="Port Geek" link={PortGeekDeploy} />
-        <CardHighlight img={MksSystem} title="Mks" link={MksDeploy} />
+        <CardHighlight
+          img={PortGeek}
+          title="Port Geek"
+          link={PortGeekDeploy}
+          type="Front end"
+        />
+        <CardHighlight
+          img={MksSystem}
+          title="Mks"
+          link={MksDeploy}
+          type="Front end"
+        />
       </div>
     </HighlightsStyled>
   );

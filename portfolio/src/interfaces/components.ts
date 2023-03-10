@@ -34,9 +34,10 @@ export interface ICardComponent extends IButtonComponent {
 }
 
 export interface ICardHighlightComponent {
-  img: any;
-  title: string;
-  link: string;
+  img?: any;
+  title?: string;
+  link?: string;
+  type?: string;
 }
 
 export interface ICardIconsComponent extends ICardHighlightComponent {}

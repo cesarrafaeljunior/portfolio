@@ -1,11 +1,17 @@
 import { IProjects } from "../interfaces/databases";
+import PortGeek from "../assets/img/capas/port_geek.png";
+import MksSystem from "../assets/img/capas/mks_system.png";
+import HamburguerShop from "../assets/img/capas/burguer_shop.png";
+import FinancesControl from "../assets/img/capas/finances_control.png";
+import NodeApi from "../assets/img/capas/node.png";
+import PythonApi from "../assets/img/capas/python.jpg";
 
 export const projects: IProjects[] = [
   {
     name: "Port Geek",
     description:
       "Site que possibilita ao usuário, gerar seu próprio portifólio, podendo optar por escolher qualquer um dos Layouts disponíveis na aplicação, o gerador recupera todas as informações inseridas pelo usuário posicionando-as no Layout.",
-    image: null,
+    image: PortGeek,
     type: "Front end",
     repository: "https://github.com/cesarrafaeljunior/port-geek",
     deploy: "https://port-geek-main.vercel.app/",
@@ -23,7 +29,7 @@ export const projects: IProjects[] = [
     name: "MKS Sistemas",
     description:
       "Um aplicativo de E-commerce, onde o usuário pode adicionar e remover itens de um carrinho, existe também a possibilidade de aumentar a quantidade de um mesmo item, o que altera automaticamente o valor total do carrinho.",
-    image: null,
+    image: MksSystem,
     type: "Front end",
     repository: "https://github.com/cesarrafaeljunior/teste_tecnico_mks",
     deploy:
@@ -39,10 +45,10 @@ export const projects: IProjects[] = [
     team: false,
   },
   {
-    name: "Market Maker",
+    name: "Market Maker Api",
     description:
       "Market Maker é uma API para bares e restaurantes locais que tem como finalidade, aumentar a produtividade e velocidade de comunicação dos garçoms com os demais funcionários da cozinha. É possível registrar pedidos, mesas, funcionários, além de obter hitóricos de pedidos de cada mesa específica, para informações detalhadas acesse o repositório da aplicação",
-    image: null,
+    image: NodeApi,
     type: "Back end",
     repository: "https://github.com/cesarrafaeljunior/market-maker",
     deploy: null,
@@ -73,7 +79,7 @@ export const projects: IProjects[] = [
     name: "Hamburger Shop",
     description:
       "Um E-commerce básico de lanches e bebidas, é possível adicionar e remover os itens do carrinho, a medida que o valor total do carrinho se altera conforme a quantidade de itens adicionados.",
-    image: null,
+    image: HamburguerShop,
     type: "Front end",
     repository: "https://github.com/cesarrafaeljunior/e-commerce-hamburgueria",
     deploy:
@@ -85,7 +91,7 @@ export const projects: IProjects[] = [
     name: "Finances Control",
     description:
       "Um aplicativo simples que permite o usuário controlar suas finanças, podendo optar por registrar entradas ou saídas de dinheiro, com o cálculo acontecendo automaticamente.",
-    image: null,
+    image: FinancesControl,
     type: "Front end",
     repository: "https://github.com/cesarrafaeljunior/FinancesControl",
     deploy: "https://react-entrega-s1-nu-kenzie-cesarrafaeljunior.vercel.app/",
@@ -96,7 +102,7 @@ export const projects: IProjects[] = [
     name: "Kiosque Api",
     description:
       "Um sistema de pedidos para um quiosque que interage com uma base de dados em memória.",
-    image: null,
+    image: PythonApi,
     type: "Back end",
     repository: "https://github.com/cesarrafaeljunior/kiosque_api",
     deploy: null,
@@ -107,7 +113,7 @@ export const projects: IProjects[] = [
     name: "Pet Kare Api",
     description:
       "Um sistema simples que ajuda donos de Peth Shop a guardar dados de animais.",
-    image: null,
+    image: PythonApi,
     type: "Back end",
     repository: "https://github.com/cesarrafaeljunior/pet_kare_api",
     deploy: null,
@@ -118,7 +124,7 @@ export const projects: IProjects[] = [
     name: "Bandkamp Api",
     description:
       "Um sistema que permite usuários registrarem seus almbums e suas músicas .",
-    image: null,
+    image: PythonApi,
     type: "Back end",
     repository: "https://github.com/cesarrafaeljunior/bandkamp_api",
     deploy: null,

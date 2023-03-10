@@ -74,8 +74,40 @@ export const CardStyled = styled.li<ICardComponent>`
     transition: ease 0.3s;
   }
 
+  .type_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+
+    width: 40%;
+    height: 2px;
+    padding: 1em;
+
+    z-index: 5;
+
+    background-color: #0e191b;
+
+    opacity: 60%;
+
+    border-radius: 10px 0 0 10px;
+
+    transition: ease 0.3s;
+
+    font-size: 0.8em;
+  }
+
   &:hover .banner_card {
     background-color: #314447;
+  }
+
+  .type_card:hover {
+    background-color: #314447;
+    opacity: 100%;
   }
 
   &:hover img {
