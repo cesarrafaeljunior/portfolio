@@ -10,6 +10,7 @@ export const CardHighlight = ({
   img,
   title,
   link,
+  type,
 }: ICardHighlightComponent) => {
   return (
     <CardStyled
@@ -23,6 +24,9 @@ export const CardHighlight = ({
       <a href={link} target="_blank"></a>
       <div className="banner_card">
         <p>{title}</p>
+      </div>
+      <div className="type_card">
+        <p>{type}</p>
       </div>
       <img src={img} alt="Port Geek Project Cover" />
     </CardStyled>
