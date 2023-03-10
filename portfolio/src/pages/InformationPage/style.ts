@@ -25,18 +25,27 @@ export const InformationsPageStyled = styled.section`
 
   transition: ease 0.3s;
 
-  .box__informations {
-    width: 100%;
-    height: 100%;
+  .box__aside {
+    color: white;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 5em;
+    h2 {
+      animation: subtitle 3s forwards;
 
-    height: 100%;
+      @keyframes subtitle {
+        0% {
+          opacity: 0;
+        }
+        20% {
+          opacity: 0;
+        }
+        30% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
   }
 
   @media (min-width: 768px) {
