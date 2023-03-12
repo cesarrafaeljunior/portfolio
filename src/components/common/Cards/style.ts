@@ -36,6 +36,7 @@ export const CardStyled = styled.li<ICardComponent>`
 
   transition: ease 0.5s;
 
+  overflow: hidden;
   &:hover {
     border: solid 2px ${({ hover }) => `${hover}`};
   }
@@ -54,6 +55,7 @@ export const CardStyled = styled.li<ICardComponent>`
   .banner_card {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
 
@@ -74,40 +76,154 @@ export const CardStyled = styled.li<ICardComponent>`
     transition: ease 0.3s;
   }
 
-  .type_card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    position: absolute;
-    bottom: 1px;
-    right: 0;
-
-    width: 40%;
-    height: 2px;
-    padding: 1em;
-
-    z-index: 5;
-
-    background-color: #0e191b;
-
-    opacity: 60%;
-
-    border-radius: 10px 0 0 10px;
-
-    transition: ease 0.3s;
-
-    font-size: 0.8em;
-  }
-
   &:hover .banner_card {
     background-color: #314447;
   }
 
-  .type_card:hover {
-    background-color: #314447;
-    opacity: 100%;
+  .box__options {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1em;
+    text-align: center;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 100%;
+    height: 60%;
+    padding: 1em;
+
+    z-index: 2;
+
+    opacity: 0;
+
+    background-color: #0e191b;
+
+    border-radius: 10px 10px 0 0;
+
+    transition: ease 1s;
+
+    font-size: 0.8em;
+
+    overflow: hidden;
+  }
+
+  &:hover .box__options {
+    animation: openOptions 0.3s forwards;
+
+    @keyframes openOptions {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 60%;
+        background-color: #314447;
+      }
+    }
+  }
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    font-size: 1.2em;
+
+    a {
+      width: 100%;
+      height: 100%;
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+
+      padding: 0.4em;
+
+      border: solid 1px white;
+      border-radius: 35%;
+
+      transition: ease 0.5s;
+    }
+
+    &:hover .icon {
+      transform: scale(1.1);
+      background-color: #0e191b;
+    }
+  }
+
+  .box__github {
+    position: relative;
+
+    ::after {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      bottom: -4.5em;
+      right: 0;
+    }
+
+    &:hover::after {
+      content: "Repositório";
+      animation: textInformation 1s forwards;
+    }
+  }
+
+  .box__display {
+    position: relative;
+
+    ::after {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      bottom: -4.5em;
+      right: 0;
+      font-size: 1em;
+    }
+
+    &:hover::after {
+      content: "${({ text }) => text}";
+      animation: textInformation 1s forwards;
+    }
+  }
+
+  .box__details {
+    position: relative;
+
+    ::after {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      bottom: -4.5em;
+      right: 0;
+    }
+
+    &:hover::after {
+      content: "Detalhes";
+      animation: textInformation 1s forwards;
+    }
+  }
+
+  @keyframes textInformation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   &:hover img {

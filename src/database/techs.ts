@@ -9,6 +9,7 @@ import TypeScriptIcon from "../assets/img/icons/typeScript_icon.png";
 import SqlIcon from "../assets/img/icons/sql_icon.png";
 import PostgresIcon from "../assets/img/icons/postgress_icon.png";
 import ApiIcon from "../assets/img/icons/api_icon.png";
+import Python from "../assets/img/icons/python_icon.png";
 
 export const techs = [
   {
@@ -87,5 +88,12 @@ export const techs = [
     type: "passive",
     description:
       "As APIs são um conjunto de padrões que fazem parte de uma interface. As APIs permitem a criação de plataformas de maneira mais simples e prática para desenvolvedores. A partir de APIs, é possível criar softwares, aplicativos, programas e plataformas diversas.",
+  },
+  {
+    tech: "Python",
+    image: Python,
+    type: "back_end",
+    description:
+      "O Python foi desenvolvido para ser focado no programador, visando priorizar o esforço do homem em relação à máquina e tem como objetivo chave aumentar a produtividade, Acontece que esses dois assuntos, por mais distintos que sejam, possuem uma ideologia em comum: busca por melhores resultados.",
   },
 ];

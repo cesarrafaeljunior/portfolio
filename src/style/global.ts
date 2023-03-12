@@ -26,6 +26,7 @@ body{
     a{
         text-decoration: none;
         cursor: pointer;
+        color: white;
     }
     button{
         border: none;

@@ -14,4 +14,6 @@ export const Div = styled.div<IDivComponent>`
 
   width: ${({ width }) => `${width}`};
   height: ${({ height }) => `${height}`};
+
+  animation-duration: 0.6s;
 `;

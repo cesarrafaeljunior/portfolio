@@ -10,7 +10,7 @@ const color = {
 
 export const HeaderStyled = styled.header`
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   right: 0;
 

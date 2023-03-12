@@ -17,6 +17,8 @@ export const ProjectsPageStyled = styled.section`
 
   color: #ffff;
 
+  animation-duration: 1.5s;
+
   .section__filter {
     display: flex;
     flex-direction: column;
@@ -29,6 +31,8 @@ export const ProjectsPageStyled = styled.section`
     max-width: 1300px;
 
     margin-top: 3em;
+
+    animation-duration: 2.5s;
 
     @media (min-width: 1220px) {
       flex-direction: row;

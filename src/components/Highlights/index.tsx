@@ -14,15 +14,9 @@ export const Highlights = () => {
         <CardHighlight
           img={PortGeek}
           title="Port Geek"
-          link={PortGeekDeploy}
-          type="Front end"
+          deploy={PortGeekDeploy}
         />
-        <CardHighlight
-          img={MksSystem}
-          title="Mks"
-          link={MksDeploy}
-          type="Front end"
-        />
+        <CardHighlight img={MksSystem} title="Mks" deploy={MksDeploy} />
       </div>
     </HighlightsStyled>
   );

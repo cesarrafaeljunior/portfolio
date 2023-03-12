@@ -11,7 +11,7 @@ export const MainPageStyled = styled.main`
     position: absolute;
     top: 1em;
     right: 1em;
-    z-index: 3;
+    z-index: 4;
     .menu_hamb {
       width: 40px;
       height: 40px;
