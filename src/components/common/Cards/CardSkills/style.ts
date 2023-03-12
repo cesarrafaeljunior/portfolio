@@ -19,6 +19,7 @@ export const CardSkillsStyled = styled.div<ICardSkillStyledComponent>`
   img {
     width: 40px;
     height: 30px;
+    color: white;
   }
 
   &:hover {
