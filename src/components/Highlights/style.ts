@@ -11,7 +11,7 @@ export const HighlightsStyled = styled.section`
 
   animation-duration: 1.5s;
 
-  font-size: 1.3em;
+  font-size: 1em;
 
   color: #ffffff;
 
