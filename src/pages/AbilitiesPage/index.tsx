@@ -21,6 +21,7 @@ export const AbilitiesPage = () => {
         width="100%"
         height="100%"
         gap="10em"
+        className="animate__fadeIn"
       >
         <SkillTree title="Front-End">
           <Div
@@ -141,12 +142,6 @@ export const AbilitiesPage = () => {
             alignItems="center"
             justifyContent="center"
           >
-            <CardSkills
-              icon={null}
-              alt="nullTech"
-              bottom="-0.7em"
-              rotate="90deg"
-            />
             <CardSkills
               icon={null}
               alt="nullTech"

@@ -11,8 +11,8 @@ export const ProjectsPage = () => {
   const { projectsFiltered, projectsFilter } = useContext(projectContext);
 
   return (
-    <ProjectsPageStyled>
-      <section className="section__filter">
+    <ProjectsPageStyled className="animate__fadeInUp">
+      <section className="section__filter animate__fadeInLeftBig">
         <h2>Filtrar por:</h2>
         <Div
           display="flex"
@@ -63,7 +63,13 @@ export const ProjectsPage = () => {
             <CardHighlight
               title={elem.name}
               img={elem.image}
-              type={elem.type}
+              repo={elem.repository}
+              deploy={typeof elem.deploy == "string" ? elem.deploy : undefined}
+              doc={
+                typeof elem.documentation == "string"
+                  ? elem.documentation
+                  : undefined
+              }
             />
           ))}
         </ul>

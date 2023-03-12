@@ -3,7 +3,7 @@ export interface IProjects {
   description: string;
   image: string | null;
   type: string;
-  repository: string | null;
+  repository: string;
   deploy: string | null;
   techs: string[];
   team: boolean;

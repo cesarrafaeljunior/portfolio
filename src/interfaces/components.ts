@@ -31,16 +31,20 @@ export interface ICardComponent extends IButtonComponent {
   children?: ReactNode;
   flexDirection?: String;
   cursor?: String;
+  text?: string;
 }
 
 export interface ICardHighlightComponent {
   img?: any;
   title?: string;
-  link?: string;
-  type?: string;
+  deploy?: string;
+  repo?: string;
+  doc?: string;
 }
 
-export interface ICardIconsComponent extends ICardHighlightComponent {}
+export interface ICardIconsComponent extends ICardHighlightComponent {
+  link?: string;
+}
 
 export interface ICardSkillsComponent {
   display?: string;
