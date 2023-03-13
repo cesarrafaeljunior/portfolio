@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Back from "../../assets/img/bg/alexios_1.png";
 
 const color = {
   colorHover: "#CFD8DE",

@@ -3,7 +3,6 @@ import { MainPage } from "../pages/MainPage";
 import { InformationPage } from "../pages/InformationPage";
 import { ProjectsPage } from "../pages/projectsPage";
 import { AbilitiesPage } from "../pages/AbilitiesPage";
-import { ContactPage } from "../pages/ContactPage";
 
 export const RoutesMain = () => {
   return (
@@ -13,7 +12,6 @@ export const RoutesMain = () => {
         <Route path="informations" element={<InformationPage />} />
         <Route path="abilities" element={<AbilitiesPage />} />
         <Route path="projects" element={<ProjectsPage />} />
-        <Route path="contact" element={<ContactPage />} />
       </Route>
     </Routes>
   );

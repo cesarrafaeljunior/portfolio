@@ -73,6 +73,7 @@ export interface IInputComponent {
 }
 
 export interface IDivComponent {
+  position?: string;
   display?: string;
   wrap?: string;
   flexDirection?: string;
@@ -84,4 +85,7 @@ export interface IDivComponent {
   width?: string;
   height?: string;
   className?: String;
+  maxWidth?: string;
+  border?: string;
+  minHeight?: string;
 }
