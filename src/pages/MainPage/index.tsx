@@ -4,12 +4,14 @@ import { MenuNav } from "../../components/MenuNav";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { MainPageStyled } from "./style";
+import { ContactModal } from "../../components/ContactModal";
 
 export const MainPage = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   return (
     <MainPageStyled>
+      <ContactModal />
       <figure className="box__menu">
         {isOpenMenu ? (
           <AiOutlineClose
